@@ -1,0 +1,57 @@
+[user]
+	name = Vahid Dzanic
+#	email = vahid.dzanic@roche.com
+	email = vdc@gmx.ch
+
+[pull]
+    rebase = true
+[core]
+    editor = vim
+#    hooksPath = ~/iccore-githooks
+[commit]
+    gpgSign = false
+[color]
+    ui = true
+    diff = auto
+    status = auto
+    branch = auto
+[alias]
+    st = status
+    co = checkout
+    ci = commit
+    clena = clean
+    rb = rebase
+    whatadded = log --diff-filter=A
+    pa = pickaxe
+    ds = diff --staged
+    ls = log --pretty=format:%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --date=relative
+    ll = log --pretty=format:%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn] --decorate --numstat
+    sub = submodule update --init --recursive
+    subr = submodule update --init --remote
+    subrr = submodule update --init --recursive --remote
+ 
+    h = log --pretty=format:"%C(cyan)%h\\ %C(yellow)%ad%Cred\\ %Creset%s%Cgreen\\ [%an]\\ %C(auto)%d" --decorate --date=short --graph --topo-order --histogram --date=format:'%Y-%m-%d %H:%M' 
+    dd = difftool --dir-diff
+    s = status --short
+
+    ct = checkout --track
+
+[merge]
+    tool = kdiff3
+[gui]
+    gcwarning = false
+[svn]
+	useLogAuthor = True
+	addAuthorFrom = True
+[push]
+    default = simple
+[gc]
+   autoDetach = false
+
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[diff]
+	tool = araxis
