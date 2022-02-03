@@ -1,13 +1,12 @@
 [user]
 	name = Vahid Dzanic
-#	email = vahid.dzanic@roche.com
 	email = vdc@gmx.ch
 
 [pull]
     rebase = true
 [core]
     editor = vim
-#    hooksPath = ~/iccore-githooks
+#    hooksPath = ~/githooks
 [commit]
     gpgSign = false
 [color]
