@@ -46,7 +46,6 @@
     default = simple
 [gc]
    autoDetach = false
-
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
